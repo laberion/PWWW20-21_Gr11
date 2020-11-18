@@ -61,3 +61,49 @@
     flex-direction: row;
     justify-content: space-around;
   }
+
+  nav{
+    background-color: #81b300;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 70px;
+   
+  }
+
+  #pages li{
+    display: inline; 
+    margin-left:1em;
+    text-transform: uppercase;
+    
+  }
+
+  #pages li a{
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 13px;
+    color:white;
+  }
+  #pages li a:hover{
+    color:black;
+  }
+
+#search{
+   margin-left: 25%;
+   width: 284px;
+   height: 32px;
+}
+
+#search-label{
+  width: 75%;
+  height: 32px;
+  border:none;
+  border-right:1px solid #dddddd;
+}
+#search-button{
+  width: 25%;
+  height:32px;
+  margin-left: -4px;
+  background-color: white;
+  border:none;
+}
