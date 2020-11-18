@@ -1,0 +1,63 @@
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: "Georgia", 'Times New Roman', Times, serif;
+  }
+  header {
+    max-width: 100%;
+    background-color: #fff;
+    border-top: 5px solid #81b300;
+    margin: 0 auto;
+  }
+  #title{
+    font-size: 46px;
+    line-height: 46px;
+    color: #333333;
+  }
+  #moto{
+    font-size: 12px;
+    line-height: 12px;
+    color: #999999;
+  }
+  .social{
+    margin-left:75%;
+    width: 250px;
+    height: 50px;
+    background-color: #81b300;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .icon{
+    width: 18x;
+    height: 18px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #1f1f1f;
+  }
+  .icon:hover{
+      background-color:#00acee;
+      border: 1px solid #0e76a8;
+  }
+  #secondNav{
+    margin-top: auto;
+    font-size: 12px;
+    line-height: 14px;
+    color: #81b300;
+  }
+  #secondNav a{
+    color: #81b300;
+    text-decoration: none;
+  }
+  #secondNav a:hover{
+    color: #384e00;
+    text-decoration: none;
+  }
+  .kolonat{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
