@@ -4,34 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Pharmacy - HairCare</title>
+    <link rel="stylesheet" type="text/css" href="Style/general.css">
 </head>
 
 <body>
     <header>
-        <div>
-            <p style="text-align: right;">
-                <i style="background-color:black;"><a href="#"><img src="Images/icon-linkedin.png"/></a></i>
-                <i style="background-color:black;"><a href="#"><img src="Images/icon-twitter.png"/></a></i>
-                <i style="background-color:black;"><a href="#"><img src="Images/icon-pinterest.png"/></a></i>
-                <i style="background-color:black;"><a href="#"><img src="Images/icon-google-plus.png"/></a></i>
-                <i style="background-color:black;"><a href="#"><img src="Images/icon-rss.png"/></a></i>
-            </p>
-        </div>
-        <div>
-            <img src="Images/pharmacylogo.png" alt="pharmaLogo" width="50" height="50"/ >
-            <h1>Pharmacy</h1>
-            <p>Making sure you feel as good as you look.</p>
-        </div>
-        <div>
-            <p>
-                <a href="#">Sign Up</a> | <a href="#">Login</a> | <a href="#">RSS Feed</a> | <a href="#">Archived
-                    news</a>
-            </p>
-        </div>
-
-        <nav>
+        
+        <div class="kolonat">
             <div>
-                <ul>
+                <div id="ikonat">
+                    <img id="logo" src="Images/pharmacylogo.png" alt="pharmaLogo" width="50" height="50" >
+                    <div id="titullilogo">
+                        <h1 id="title">Pharmacy</h1>
+                        <p id="moto">Making sure you feel as good as you look.</p>
+                    </div>
+
+                    
+                </div>
+               
+              
+            </div>
+            
+            <div id="secondNav">
+                <div class="social">
+                    <a class="icon" href="#"><img src="Images/icon-linkedin.png"/></a>
+                    <a class="icon" href="#"><img src="Images/icon-twitter.png"/></a>
+                    <a class="icon" href="#"><img src="Images/icon-pinterest.png"/></a>
+                    <a class="icon" href="#"><img src="Images/icon-google-plus.png"/></a>
+                    <a class="icon" href="#"><img src="Images/icon-rss.png"/></a>
+                </div>
+                <p>
+                    <a href="#">Sign Up</a> | <a href="#">Login</a> | <a href="#">RSS Feed</a> | <a href="#">Archived news</a>
+                </p>
+            </div>
+        </div>
+        <nav id="navigation">
+            <div>
+                <ul id="pages">
                     <li><a href="index.html">Homepage</a></li>
                     <li><a href="fitness.html">Fitness</a></li>
                     <li><a href="HairCare.html">HairCare</a></li>
@@ -41,10 +50,10 @@
                 </ul>
             </div>
 
-            <div>
+            <div id="search">
                 <form method="GET">
-                    <input type="search" placeholder="Search our website..." name="search">
-                    <input type="submit" value="Search">
+                    <input id="search-label" type="search" placeholder="Search our website..." name="search">
+                    <input id="search-button" type="submit" value="Search">
                 </form>
             </div>
         </nav>
@@ -61,8 +70,8 @@
                             <p>Cantu Shea Butter Leave In Conditioning Repair Cream 16 oz <br>
                             <strong>$6.95</strong></p>
                         </li>
-                        <li>
-                            <img src="Images/HairCare/Conditioners/Conditioner-Shea.jpg" />
+                        <li style="border: 1px solid black">
+                            <img src="Images/HairCare/Conditioners/Conditioner-Shea.jpg">
                             <p>Shea Moisture Jamaican Black Castor Oil Leave-In Conditioner Strengthen & Grow 11 oz <br>
                             <strong>$15.95</strong></p>
                         </li>
