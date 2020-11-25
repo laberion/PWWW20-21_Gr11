@@ -1,0 +1,54 @@
+
+main{
+    background-color: lightcyan;
+    margin-top: -20px;
+}
+
+/*Ndan divin kryesor ne dy pjes i cili ndodhet ne main*/
+
+#prod{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+}
+
+#listprod{
+    border-right: 1px solid lightgray;
+    text-align: left;
+}
+#listprod ul{
+    list-style: none;
+    margin-left: -10px;
+    padding-right: 1px;
+}
+#listprod a{
+    text-decoration: none;
+    color:darkslategray;
+}
+
+
+
+#products ul{
+    list-style: none;
+}
+
+/*Ndan divin ne te cilin ndodhen produktet ne 4 pjes te barabarta*/
+li ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    text-align: center;
+}
+
+li ul li{
+    background-color: white;
+    margin-right: 5px;
+
+} 
+
+li ul li:hover{
+    border:1px solid black;
+    border-radius: 5px;
+}
+    

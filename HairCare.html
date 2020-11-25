@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Pharmacy - HairCare</title>
     <link rel="stylesheet" type="text/css" href="Style/general.css">
+    <link rel="stylesheet" type="text/css" href="Style/hair.css">
 </head>
 
 <body>
@@ -60,17 +61,28 @@
     </header>
     <main>
         <h1>HairCare</h1>
-        <h2>Product</h2>
-            <ul style="list-style-type:none;">
+        <div id="prod">
+        <div id="listprod">
+            <h2>Product</h2>
+            <ul>
+                <li><a href="#cond">CONDITIONERS</a></li>
+                <li><a href="#curl">CURL/WAVE</a></li>
+                <li><a href="#loss">HAIR LOSS</a></li>
+                <li><a href="#vit">HAIR VITAMINS</a></li>
+            </ul>
+
+        </div>
+        <div id="products">
+            <ul>
                 <li>
-                    <h3>CONDITIONERS</h3>
-                    <ul style="display: inline-flex; list-style-type:none;">
+                    <h3><a name="cond">CONDITIONERS</a></h3>
+                    <ul>
                         <li>
                             <img src="Images/HairCare/Conditioners/Conditioner-Cantu.jpg" />
                             <p>Cantu Shea Butter Leave In Conditioning Repair Cream 16 oz <br>
                             <strong>$6.95</strong></p>
                         </li>
-                        <li style="border: 1px solid black">
+                        <li>
                             <img src="Images/HairCare/Conditioners/Conditioner-Shea.jpg">
                             <p>Shea Moisture Jamaican Black Castor Oil Leave-In Conditioner Strengthen & Grow 11 oz <br>
                             <strong>$15.95</strong></p>
@@ -88,8 +100,8 @@
                     </ul>
                 </li>
                 <li>
-                    <h3>CURL/WAVE PRODUCTS</h3>
-                    <ul style="display: inline-flex; list-style-type:none;">
+                    <h3><a name="curl">CURL/WAVE PRODUCTS</a></h3>
+                    <ul>
                         <li>
                             <img src="Images/HairCare/Culr/Curl-DevaCurl.jpg" />
                             <p>DevaCurl B'Leave-In Miracle Curl Plumper 6 oz<br>
@@ -113,8 +125,8 @@
                     </ul>
                 </li>
                 <li>
-                    <h3>HAIR LOSS PRODUCTS</h3>
-                    <ul style="display: inline-flex; list-style-type:none;">
+                    <h3><a name="loss">HAIR LOSS PRODUCTS</a></h3>
+                    <ul>
                         <li>
                             <img src="Images/HairCare/HairLoss/HairLoss-Dominican.jpg" />
                             <p>Dominican Magic Hair Follicle Anti-Aging Scalp Drops 4.4 oz<br>
@@ -138,8 +150,8 @@
                     </ul>
                 </li>
                 <li>
-                    <h3>HAIR VITAMINS</h3>
-                    <ul style="display: inline-flex; list-style-type:none;">
+                    <h3><a name="vit">HAIR VITAMINS</a></h3>
+                    <ul>
                         <li>
                             <img src="Images/HairCare/Vitamins/Vitamins-Mane.jpg" />
                             <p>The Mane Choice Manetabolism Plus Hair Vitamins 60-count<br>
@@ -163,6 +175,8 @@
                     </ul>
                 </li>
             </ul>
+        </div> 
+        </div>   
     </main>
     <footer>
         <div class="col contactDetails">
