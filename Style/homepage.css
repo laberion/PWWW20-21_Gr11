@@ -1,0 +1,13 @@
+#elementet {
+    display: flex;
+}
+section ul {
+    display: flex;
+    list-style: none;
+}
+#slider {
+    height: 400px;
+    background-color: blanchedalmond;
+    margin: 30px;
+    border: 2px solid coral;
+}
