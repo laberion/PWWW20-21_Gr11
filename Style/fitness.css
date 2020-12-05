@@ -49,19 +49,51 @@ main {
     box-shadow: 1px 1px 4px 1px rgba(0,0,0,.15);
     margin: 30px 30px;
 }
-.col{
+#lSide{
+    float: left;
     text-align: center;
-    width: 45%;
-    overflow: hidden;
+    width: 50%;
+    height: 360px;
+    background: -webkit-linear-gradient(to right, #135058, #F1F2B5); 
+    background: linear-gradient(to right, #135058, #F1F2B5); 
+    background-clip: border-box;
+    position:absolute;
+    overflow: auto;
 }
-.col h1{
+#lSide p {
+    padding: 20px 50px 10px 30px;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.3);
+}
+#lSide p a {
+    text-decoration: none;
+    color: blue;
+}
+#lSide p a:hover {
+    color: red;
+    font-size: 1.1rem;
+}
+#lSide h1{
     font-weight: 1000;
+    margin-top: 50px;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
+    -moz-text-stroke: 1px rgba(255, 255, 255, 0.4);;
+    text-stroke:1px rgba(255, 255, 255, 0.4);
 }
-.col img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+#rSide{
+    position: absolute;
+    left:47.62%;
+    width: 50%;
+    height:360px;
+    background-image: url("../Images/fitness/healthyFood.png");
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(9% 0, 100% 0%, 100% 100%, 0% 100%);
 }
-.col2{
-    background-image: url("../Images/fitness/healthyFood.jpg");
+
+#podcast{
+    margin: 50px;
+}
+audio{
+    margin: 20px;
 }
