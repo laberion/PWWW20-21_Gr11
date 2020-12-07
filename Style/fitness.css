@@ -77,7 +77,10 @@ main {
     margin-top: 50px;
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
     -moz-text-stroke: 1px rgba(255, 255, 255, 0.4);;
-    text-stroke:1px rgba(255, 255, 255, 0.4);
+    stroke:1px rgba(255, 255, 255, 0.4);
+}
+span{
+    color:red;
 }
 #rSide{
     position: absolute;
@@ -96,4 +99,13 @@ main {
 }
 audio{
     margin: 20px;
+    border-radius: 26px;
+    border: 1px solid grey;
+}
+table{
+    width: 85%;
+    margin: 50px auto;
+    text-align: center;
+    background: radial-gradient(ellipse at top, #d5f1b5, transparent),
+                radial-gradient(ellipse at bottom, #4d9f0c, transparent);
 }
