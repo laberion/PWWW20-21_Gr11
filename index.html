@@ -6,12 +6,6 @@
     <title>Pharmacy - Homepage</title>
     <link rel="stylesheet" type="text/css" href="Style/general.css">
     <link rel="stylesheet" type="text/css" href="Style/homepage.css">
-    <style>
-        /* section ul{
-            display:inline flex;
-            justify-content: space-around;
-        } */
-    </style>
 </head>
 
 <body>
@@ -25,11 +19,7 @@
                         <h1 id="title">Pharmacy</h1>
                         <p id="moto">Making sure you feel as good as you look.</p>
                     </div>
-
-                    
                 </div>
-               
-              
             </div>
             
             <div id="secondNav">
@@ -67,7 +57,24 @@
     </header>
     <main>
         <div id="slider">
+            <div id="sliderImg">
+                <img src="Images/doc.jpg" alt="sliderImg"/>
+            </div>
+            <div id="controls">
+                <svg  class="arrow" width="50" height="50">
+                    <circle cx="25" cy="25" r="10" stroke="black" stroke-width="2"/>
+                    <polyline points="30 20, 20 25 , 30 30" style="stroke:white;stroke-width:2;fill:none;" />
+                </svg>
 
+                <span id="imgControls">
+
+                </span>
+
+                <svg  class="arrow" width="50" height="50">
+                    <circle cx="25" cy="25" r="10" stroke="black" stroke-width="2"/>
+                    <polyline points="20 20, 30 25 , 20 30" style="stroke:white;stroke-width:2;fill:none;" />
+                </svg>
+            </div>
         </div>
         <section id="elementet">
                     <article>
@@ -188,7 +195,7 @@
             <p>Code by <a href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
         </div>
     </footer>
-
+    <script src="scripts/home.js"></script>
 </body>
 
 </html>
