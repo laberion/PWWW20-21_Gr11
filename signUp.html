@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" type="text/css" href="Style/general.css">
 </head>
 
@@ -35,7 +34,8 @@
                     <a class="icon" href="#"><img src="Images/icon-rss.png" /></a>
                 </div>
                 <p>
-                    <a href="signUp.html">Sign Up</a> | <a href="#">Login</a> | <a href="#">RSS Feed</a> | <a href="#">Archived
+                    <a href="signUp.html">Sign Up</a> | <a href="#">Login</a> | <a href="#">RSS Feed</a> | <a
+                        href="#">Archived
                         news</a>
                 </p>
             </div>
@@ -61,46 +61,54 @@
         </nav>
     </header>
     <main>
-        <h2>About Us</h2>
+        <div id="tutorial">
 
-        <div style="display: flex;">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, iusto unde accusamus aperiam ab aut
-                placeat ut sapiente explicabo. Veritatis quod nobis dicta cum quis molestias, velit in obcaecati vero
-                labore iusto minima, aspernatur optio pariatur voluptatum laborum nemo. Necessitatibus dolores mollitia
-                praesentium fugit neque ea ipsam, velit sapiente vel eveniet commodi, provident debitis nemo voluptas
-                amet eius expedita dignissimos doloribus veritatis. Eos temporibus itaque perferendis vel consectetur,
-                rerum aut reprehenderit libero totam debitis sapiente eum, iste impedit voluptas at. Architecto quaerat
-                optio explicabo voluptatem molestiae voluptatibus, consectetur voluptas reprehenderit, assumenda at
-                temporibus ipsam debitis deserunt vel tempora maiores eius.</p>
-            <img src="Images/Pharmacy.png" alt="Pharmacyphoto" height="250">
         </div>
 
-        <div style="display: flex;">
-            <img src="Images/Pharmacy.png" alt="Pharmacyphoto" height="250">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, iusto unde accusamus aperiam ab aut
-                placeat ut sapiente explicabo. Veritatis quod nobis dicta cum quis molestias, velit in obcaecati vero
-                labore iusto minima, aspernatur optio pariatur voluptatum laborum nemo. Necessitatibus dolores mollitia
-                praesentium fugit neque ea ipsam, velit sapiente vel eveniet commodi, provident debitis nemo voluptas
-                amet eius expedita dignissimos doloribus veritatis. Eos temporibus itaque perferendis vel consectetur,
-                rerum aut reprehenderit libero totam debitis sapiente eum, iste impedit voluptas at. Architecto quaerat
-                optio explicabo voluptatem molestiae voluptatibus, consectetur voluptas reprehenderit, assumenda at
-                temporibus ipsam debitis deserunt vel tempora maiores eius.</p>
-        </div>
+        <div id="signUp">
+            <form method="GET">
+                <fieldset>
+                    <legend>Sign Up</legend>
+                    <div>
+                    <label> Name: <input type="text" name="name" required autofocus> </label> <br>
+                    <label> Surname: <input type="text" name="surname" required> </label> <br>
+                    <label> Birthday: <input type="date" name="birthday" max="2002-01-01"></label> <br>
+                    <label> Gender: <br>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label><br>
+                    </label><br>
+                    <label>Country:</label><br />
+                        <select name="country">
+                            <option>Select your country</option>
+                            <option value="Afganistan">Afghanistan</option>
+                            <option value="Albania">Albania</option>
+                            <option value="Algeria">Algeria</option>
+                            <option value="American Samoa">American Samoa</option>
+                            <option value="Andorra">Andorra</option>
+                            <option value="Angola">Angola</option>
+                            <option value="Anguilla">Anguilla</option>
+                            <option value="Antigua & Barbuda">Antigua & Barbuda</option>
+                            <option value="Argentina">Argentina</option>
+                        </select> <br>
+                    <label> Phone: <input type="tel" name="phoneNumber"></label> <br>
+                    <label> Email: <input type="email" name="email" autocomplete="on" required></label> <br>
+                    <label> Password: <input type="password" name="password" required></label> <br>
+                    <label> Repeat Password: <input type="password" name="password" required></label>   <br>
+                    <label> <input type="checkbox" value="Yes" name="termsOfConditions"> By creating an account you agree to our <a href="#" id="terms" style="color:dodgerblue">Terms & Privacy</a> </label>
+                    </div>
 
-        <div style="display: flex;">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, iusto unde accusamus aperiam ab aut
-                placeat ut sapiente explicabo. Veritatis quod nobis dicta cum quis molestias, velit in obcaecati vero
-                labore iusto minima, aspernatur optio pariatur voluptatum laborum nemo. Necessitatibus dolores mollitia
-                praesentium fugit neque ea ipsam, velit sapiente vel eveniet commodi, provident debitis nemo voluptas
-                amet eius expedita dignissimos doloribus veritatis. Eos temporibus itaque perferendis vel consectetur,
-                rerum aut reprehenderit libero totam debitis sapiente eum, iste impedit voluptas at. Architecto quaerat
-                optio explicabo voluptatem molestiae voluptatibus, consectetur voluptas reprehenderit, assumenda at
-                temporibus ipsam debitis deserunt vel tempora maiores eius.</p>
-            <img src="Images/Pharmacy.png" alt="Pharmacyphoto" height="250">
+                    <div>
+                        <input type="submit" name="submit" value="Sign Up">
+                        <input type="reset" name="reset" value="Reset">
+                    </div>
+                </fieldset>
+            </form>
         </div>
-
     </main>
-
     <footer>
         <div id="foot">
             <div class="col contactDetails">
@@ -138,26 +146,21 @@
                     qui, cupiditate earum. Illum molestias neque eveniet est rem.</p>
                 <a href="#">Read more >></a>
             </div>
-        </div>
 
-        <div class="col newsletter">
-            <h4>Grab our newsletter</h4>
-            <form method="POST">
-                <input type="text" name="name" placeholder="Name"> <br>
-                <input type="email" name="email" placeholder="Email"> <br>
-                <button>SUBMIT</button>
-            </form>
+            <div class="col newsletter">
+                <h4>Grab our newsletter</h4>
+                <form method="POST">
+                    <input type="text" name="name" placeholder="Name"> <br>
+                    <input type="email" name="email" placeholder="Email"> <br>
+                    <button>SUBMIT</button>
+                </form>
+            </div>
         </div>
-
         <div id="rights">
             <p>Copyright © 2013 - All rights reserved - Domain name</p>
             <p>Code by <a href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
         </div>
     </footer>
-
-
-
-
 
 </body>
 
