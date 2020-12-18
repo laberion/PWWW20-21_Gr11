@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" type="text/css" href="Style/general.css">
 </head>
 
@@ -35,7 +34,8 @@
                     <a class="icon" href="#"><img src="Images/icon-rss.png" /></a>
                 </div>
                 <p>
-                    <a href="signUp.html">Sign Up</a> | <a href="signIn.html">Login</a> | <a href="#">RSS Feed</a> | <a href="#">Archived
+                    <a href="signUp.html">Sign Up</a> | <a href="signIn.html">Login</a> | <a href="#">RSS Feed</a> | <a
+                        href="#">Archived
                         news</a>
                 </p>
             </div>
@@ -61,46 +61,27 @@
         </nav>
     </header>
     <main>
-        <h2>About Us</h2>
+        <div id="tutorial">
 
-        <div style="display: flex;">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, iusto unde accusamus aperiam ab aut
-                placeat ut sapiente explicabo. Veritatis quod nobis dicta cum quis molestias, velit in obcaecati vero
-                labore iusto minima, aspernatur optio pariatur voluptatum laborum nemo. Necessitatibus dolores mollitia
-                praesentium fugit neque ea ipsam, velit sapiente vel eveniet commodi, provident debitis nemo voluptas
-                amet eius expedita dignissimos doloribus veritatis. Eos temporibus itaque perferendis vel consectetur,
-                rerum aut reprehenderit libero totam debitis sapiente eum, iste impedit voluptas at. Architecto quaerat
-                optio explicabo voluptatem molestiae voluptatibus, consectetur voluptas reprehenderit, assumenda at
-                temporibus ipsam debitis deserunt vel tempora maiores eius.</p>
-            <img src="Images/Pharmacy.png" alt="Pharmacyphoto" height="250">
         </div>
 
-        <div style="display: flex;">
-            <img src="Images/Pharmacy.png" alt="Pharmacyphoto" height="250">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, iusto unde accusamus aperiam ab aut
-                placeat ut sapiente explicabo. Veritatis quod nobis dicta cum quis molestias, velit in obcaecati vero
-                labore iusto minima, aspernatur optio pariatur voluptatum laborum nemo. Necessitatibus dolores mollitia
-                praesentium fugit neque ea ipsam, velit sapiente vel eveniet commodi, provident debitis nemo voluptas
-                amet eius expedita dignissimos doloribus veritatis. Eos temporibus itaque perferendis vel consectetur,
-                rerum aut reprehenderit libero totam debitis sapiente eum, iste impedit voluptas at. Architecto quaerat
-                optio explicabo voluptatem molestiae voluptatibus, consectetur voluptas reprehenderit, assumenda at
-                temporibus ipsam debitis deserunt vel tempora maiores eius.</p>
-        </div>
+        <div id="signUp">
+            <form method="GET">
+                <fieldset>
+                    <legend>Log In</legend>
+                    <div>
+                    <label> Email: <input type="email" name="email" autocomplete="on" required></label> <br>
+                    <label> Password: <input type="password" name="password" required></label> <br>
+                    </div>
 
-        <div style="display: flex;">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, iusto unde accusamus aperiam ab aut
-                placeat ut sapiente explicabo. Veritatis quod nobis dicta cum quis molestias, velit in obcaecati vero
-                labore iusto minima, aspernatur optio pariatur voluptatum laborum nemo. Necessitatibus dolores mollitia
-                praesentium fugit neque ea ipsam, velit sapiente vel eveniet commodi, provident debitis nemo voluptas
-                amet eius expedita dignissimos doloribus veritatis. Eos temporibus itaque perferendis vel consectetur,
-                rerum aut reprehenderit libero totam debitis sapiente eum, iste impedit voluptas at. Architecto quaerat
-                optio explicabo voluptatem molestiae voluptatibus, consectetur voluptas reprehenderit, assumenda at
-                temporibus ipsam debitis deserunt vel tempora maiores eius.</p>
-            <img src="Images/Pharmacy.png" alt="Pharmacyphoto" height="250">
+                    <div>
+                        <input type="submit" name="submit" value="Sign Up">
+                        <input type="reset" name="reset" value="Reset">
+                    </div>
+                </fieldset>
+            </form>
         </div>
-
     </main>
-
     <footer>
         <div id="foot">
             <div class="col contactDetails">
@@ -138,26 +119,21 @@
                     qui, cupiditate earum. Illum molestias neque eveniet est rem.</p>
                 <a href="#">Read more >></a>
             </div>
-        </div>
 
-        <div class="col newsletter">
-            <h4>Grab our newsletter</h4>
-            <form method="POST">
-                <input type="text" name="name" placeholder="Name"> <br>
-                <input type="email" name="email" placeholder="Email"> <br>
-                <button>SUBMIT</button>
-            </form>
+            <div class="col newsletter">
+                <h4>Grab our newsletter</h4>
+                <form method="POST">
+                    <input type="text" name="name" placeholder="Name"> <br>
+                    <input type="email" name="email" placeholder="Email"> <br>
+                    <button>SUBMIT</button>
+                </form>
+            </div>
         </div>
-
         <div id="rights">
             <p>Copyright © 2013 - All rights reserved - Domain name</p>
             <p>Code by <a href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
         </div>
     </footer>
-
-
-
-
 
 </body>
 
