@@ -1,0 +1,33 @@
+
+body{
+    background-color: #02515C;
+    color:white;
+    
+}
+
+main{
+    background-image: url(../Images/new/back1.jpg), url(../Images/new/back2.png);
+    background-position: top right, top left;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 50% 100% ,50% 100% ;
+    display: flex; 
+    padding:30px;
+    margin:100px;
+    border-radius:20px;
+}
+
+.glab{
+    width: auto;
+    height: auto;
+}
+#signUp label{
+    color:white;
+     display: block;
+    
+}
+ main input, select{
+    border-radius: 30px;
+    width: 200px;
+    height: 20px;
+    opacity: 0.3;
+}

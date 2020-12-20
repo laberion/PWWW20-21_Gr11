@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Sign Up</title>
     <link rel="stylesheet" type="text/css" href="Style/general.css">
+    <link rel="stylesheet" type="text/css" href="Style/form.css">
 </head>
 
 <body>
@@ -70,18 +71,17 @@
                 <fieldset>
                     <legend>Sign Up</legend>
                     <div>
-                    <label> Name: <input type="text" name="name" required autofocus> </label> <br>
-                    <label> Surname: <input type="text" name="surname" required> </label> <br>
-                    <label> Birthday: <input type="date" name="birthday" max="2002-01-01"></label> <br>
-                    <label> Gender: <br>
-                        <input type="radio" id="male" name="gender" value="male">
-                        <label for="male">Male</label><br>
-                        <input type="radio" id="female" name="gender" value="female">
-                        <label for="female">Female</label><br>
-                        <input type="radio" id="other" name="gender" value="other">
-                        <label for="other">Other</label><br>
-                    </label><br>
-                    <label>Country:</label><br />
+                        <label> Name: </label>
+                        <input  type="text" name="name" required autofocus>
+                        <label> Surname: </label>
+                        <input type="text" name="surname" required>
+                        <label> Birthday: </label>
+                        <input type="date" name="birthday" max="2002-01-01">
+                        <label> Gender:</label>
+                        <input type="radio" name="gender" class="glab" value="male">Male<br>
+                        <input type="radio" name="gender" class="glab" value="female">Female<br>
+                        <input type="radio" name="gender" class="glab" value="other">Other<br>
+                        <label>Country:</label>
                         <select name="country">
                             <option>Select your country</option>
                             <option value="Afganistan">Afghanistan</option>
@@ -93,12 +93,18 @@
                             <option value="Anguilla">Anguilla</option>
                             <option value="Antigua & Barbuda">Antigua & Barbuda</option>
                             <option value="Argentina">Argentina</option>
-                        </select> <br>
-                    <label> Phone: <input type="tel" name="phoneNumber"></label> <br>
-                    <label> Email: <input type="email" name="email" autocomplete="on" required></label> <br>
-                    <label> Password: <input type="password" name="password" required></label> <br>
-                    <label> Repeat Password: <input type="password" name="password" required></label>   <br>
-                    <label> <input type="checkbox" value="Yes" name="termsOfConditions"> By creating an account you agree to our <a href="#" id="terms" style="color:dodgerblue">Terms & Privacy</a> </label>
+                        </select>
+
+                        <label> Phone: </label>
+                        <input type="tel" name="phoneNumber">
+                        <label> Email: </label>
+                        <input type="email" name="email" autocomplete="on" required>
+                        <label> Password: </label>
+                        <input type="password" name="password" required>
+                        <label> Repeat Password: </label>
+                        <input type="password" name="password" required><br>
+                        <input type="checkbox" value="Yes" class="glab" name="termsOfConditions"> By creating an account
+                        you agree to our <a href="#" id="terms" style="color:dodgerblue">Terms & Privacy</a>
                     </div>
 
                     <div>
