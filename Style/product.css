@@ -1,0 +1,48 @@
+body {
+    margin:0;
+}
+#disclaimer {
+    background-color: rgb(236, 236, 236);
+    height: 130px;
+    text-align: center;
+    padding: 5% 50px;
+    font-size: 1.1rem;
+}
+#diclaimer p{
+    margin-bottom: 30px;
+}
+table{
+    margin: 50px 30px;
+    border-radius: 3px;
+    text-align: center;
+}
+caption {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+tbody tr td img{
+    width: 70px;
+    height: 50px;
+}
+tbody tr td img:hover{
+    transform: scale(2) translateX(20px);
+}
+.btn {
+    height: 20px;
+    color:  #81b300;
+    box-shadow: 1px 1px 4px 1px rgba(0,0,0,.15);
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    border-left: 10px solid #81b300;
+    margin-top: 30px;
+    display: block;
+    margin-bottom: 30px;
+}
+.btn:hover{
+    color:white;
+    transition: background-color 0.8s ease;
+    background-color:  #81b300;
+}
