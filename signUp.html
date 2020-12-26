@@ -6,6 +6,7 @@
     <title>Sign Up</title>
     <link rel="stylesheet" type="text/css" href="Style/general.css">
     <link rel="stylesheet" type="text/css" href="Style/form.css">
+    <script src="scripts/utils.js"></script>
 </head>
 
 <body>
@@ -67,7 +68,7 @@
         </div>
 
         <div id="signUp">
-            <form method="GET">
+            <form method="POST" name="signUpForm" action="#">
                 <fieldset>
                     <legend>Sign Up</legend>
                     <div>
@@ -76,39 +77,39 @@
                         <label> Surname: </label>
                         <input type="text" name="surname" required>
                         <label> Birthday: </label>
-                        <input type="date" name="birthday" max="2002-01-01">
+                        <input type="date" name="birthday" max="2002-01-01" required>
                         <label> Gender:</label>
-                        <input type="radio" name="gender" class="glab" value="male">Male<br>
-                        <input type="radio" name="gender" class="glab" value="female">Female<br>
-                        <input type="radio" name="gender" class="glab" value="other">Other<br>
+                        <input type="radio" name="gender" class="glab" value="male" required>Male<br>
+                        <input type="radio" name="gender" class="glab" value="female" required>Female<br>
+                        <input type="radio" name="gender" class="glab" value="other" required>Other<br>
                         <label>Country:</label>
-                        <select name="country">
-                            <option>Select your country</option>
-                            <option value="Afganistan">Afghanistan</option>
-                            <option value="Albania">Albania</option>
-                            <option value="Algeria">Algeria</option>
-                            <option value="American Samoa">American Samoa</option>
-                            <option value="Andorra">Andorra</option>
-                            <option value="Angola">Angola</option>
-                            <option value="Anguilla">Anguilla</option>
-                            <option value="Antigua & Barbuda">Antigua & Barbuda</option>
-                            <option value="Argentina">Argentina</option>
-                        </select>
+                        <input list="country" name="country" required>
+                        <datalist id="country">
+                            <option value="Afganistan">
+                            <option value="Albania">
+                            <option value="Algeria">
+                            <option value="American Samoa">
+                            <option value="Andorra">
+                            <option value="Angola">
+                            <option value="Anguilla">
+                            <option value="Antigua & Barbuda">
+                            <option value="Argentina">
+                        </datalist>
 
                         <label> Phone: </label>
-                        <input type="tel" name="phoneNumber">
+                        <input type="tel" name="phoneNumber" required>
                         <label> Email: </label>
                         <input type="email" name="email" autocomplete="on" required>
                         <label> Password: </label>
-                        <input type="password" name="password" required>
+                        <input id="password" type="password" name="password" required>
                         <label> Repeat Password: </label>
-                        <input type="password" name="password" required><br>
-                        <input type="checkbox" value="Yes" class="glab" name="termsOfConditions"> By creating an account
+                        <input type="password" name="passwordConfirm" required><br>
+                        <input type="checkbox" value="Yes" class="glab" name="termsOfConditions" required> By creating an account
                         you agree to our <a href="#" id="terms" style="color:dodgerblue">Terms & Privacy</a>
                     </div>
 
                     <div>
-                        <input type="submit" name="submit" value="Sign Up">
+                        <input type="submit" name="submit" value="Sign Up" id="submit">
                         <input type="reset" name="reset" value="Reset">
                     </div>
                 </fieldset>
