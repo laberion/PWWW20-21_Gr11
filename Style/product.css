@@ -11,10 +11,11 @@ body {
 #diclaimer p{
     margin-bottom: 30px;
 }
-table{
+table {
     margin: 50px 30px;
     border-radius: 3px;
     text-align: center;
+    border-collapse: collapse;
 }
 caption {
     font-size: 1.5rem;

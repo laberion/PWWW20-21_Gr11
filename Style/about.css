@@ -1,0 +1,16 @@
+main {
+    margin:2em;
+}
+
+
+main div {
+    display: flex;
+    justify-content: space-around;
+}
+
+main div p {
+    padding: 20px;
+}
+main h1 {
+    text-align: center;
+}

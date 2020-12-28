@@ -11,6 +11,7 @@ function getCurrentTime(){
 function changeBackground(){
     var rgb = getCurrentTime();
     body[0].style.backgroundColor = `rgb(${rgb[0]},${rgb[1]},${rgb[2]})`;
+    body[0].style.color = `rgb(${255-rgb[0]},${255-rgb[1]},${255-rgb[2]})`;
 }
 changeBackground();
 setInterval(changeBackground , 1000);
