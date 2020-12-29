@@ -254,3 +254,31 @@ footer {
 .newsletter input:focus{
   border: 1px solid #1f1f1f;
 }
+
+/*-----Drop Down menu */
+.dropdown{
+  color:black;
+  float: right;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #74a200;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
