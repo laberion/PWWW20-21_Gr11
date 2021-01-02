@@ -42,3 +42,10 @@ button {
 #secondT{
     margin-left: 16%;
 }
+.map {
+    display: block;
+    margin: 0 auto;
+}
+address {
+    margin-left: 30px;
+}
