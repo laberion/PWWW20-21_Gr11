@@ -8,6 +8,22 @@
     <link rel="stylesheet" type="text/css" href="Style/general.css">
     <link rel="stylesheet" type="text/css" href="Style/about.css">
     <script src="scripts/general.js"></script>
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+
 </head>
 
 <body>
@@ -209,6 +225,30 @@
             </canvas>
             <button>PLAY</button>
         </section>
+        <div id="draganddrop">
+            <h2>Drag and Drop</h2>
+            <h3>Sort leters and numbers</h3>
+            <div id="box">
+                <div class="ln">
+                    <h4>Letters</h4>
+                    <div id="dragdiv1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="ln">
+                    <h4>Numbers</h4>
+                    <div id="dragdiv2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+            </div>
+
+            <div id="characters">
+                <p draggable="true" ondragstart="drag(event)" id="drag1">a</p>
+                <p draggable="true" ondragstart="drag(event)" id="drag2">3</p>
+                <p draggable="true" ondragstart="drag(event)" id="drag3">2</p>
+                <p draggable="true" ondragstart="drag(event)" id="drag4">c</p>
+                <p draggable="true" ondragstart="drag(event)" id="drag5">1</p>
+                <p draggable="true" ondragstart="drag(event)" id="drag6">b</p>
+            </div>
+        </div>
+
     </main>
 
     <footer>
