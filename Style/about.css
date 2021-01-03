@@ -43,8 +43,26 @@ button {
     margin-left: 16%;
 }
 .map {
+    position: relative;
     display: block;
     margin: 0 auto;
+    animation: changePos 5s infinite;
+   -webkit-animation: changePos 5s infinite;
+}
+@-webkit-keyframes changePos
+{
+   0%   {left: 5px;}
+   25%  {left: 10px;}
+   50%  {left: 15px;}
+   100% {left:20px;}
+}
+
+@keyframes changePos
+{
+    0%   {left: 5px;}
+   25%  {left: 10px;}
+   50%  {left: 15px;}
+   100% {left:20px;}
 }
 address {
     margin-left: 30px;
