@@ -28,8 +28,12 @@ if ( localStorage.getItem(email)){
 
 function validateEmail(email) {
 var reg = new RegExp(/^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/);
-if (reg.test(email)) {
-    return true;
+try {
+    if (reg.test(email)) {
+        return true;
+    }
+} catch (error) {
+    alert("User info not defined"); 
 }
 return false;
 }

@@ -74,7 +74,7 @@
                     </li>
                     <li><a href="#">Services</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>     
+                    <li><a href="#">Contact Us</a></li>
                 </ul>
             </div>
 
@@ -215,16 +215,37 @@
             <div id="map">
 
             </div>
-            
-        <script src="scripts/location.js"></script>
+
+            <script src="scripts/location.js"></script>
         </section>
 
         <section id="game">
             <h3>Play our game while you wait</h3>
             <canvas id="gamePad" width="600" height="600" style="border:1px solid #000000;background:white">
             </canvas>
-            <button id="playButton">PLAY</button>
+            <button id="playButton" onclick="startWorker()">PLAY</button>
             <img id="mario" src="Images/about/mario.png" width="50px" height="50px" style="display: none;">
+            <p id="result"></p>
+            <script>
+                var w;
+                function startWorker() {
+                    try {
+                        if (typeof (Worker) !== "undefined") {
+                            if (typeof (w) == "undefined") {
+                                w = new Worker("scripts/worker.js");
+                            }
+                            w.onmessage = function (event) {
+                                document.getElementById("result").innerHTML = event.data + " seconds passed since game first started";
+                            };
+                        } else {
+                            document.getElementById("result").innerHTML = "Sorry! No Web Worker support.";
+                        }
+                    } catch (error) {
+                        document.getElementById("result").innerHTML = error.message;
+                    }
+
+                }
+            </script>
             <script src="scripts/game.js"></script>
         </section>
         <div id="draganddrop">
@@ -249,8 +270,11 @@
                 <p draggable="true" ondragstart="drag(event)" id="drag5">1</p>
                 <p draggable="true" ondragstart="drag(event)" id="drag6">b</p>
             </div>
+            <p id="funFact"></p>
         </div>
-
+        <script>
+            document.getElementById('funFact').innerHTML = `Did you know that the maximum number you can represent in JS is ${Number.MAX_VALUE.toExponential().toString()}. Meanwhile the lowest is ${Number.MIN_VALUE.toFixed()}`;
+        </script>
     </main>
 
     <footer>

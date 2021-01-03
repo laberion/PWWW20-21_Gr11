@@ -16,6 +16,7 @@ section h3 {
 section p {
     text-align: center;
     padding: 20px 70px;
+    word-break: keep-all;
 }
 blockquote {
     font-style: italic;
@@ -99,8 +100,4 @@ address {
 
   #draganddrop p{
       display: inline-block;
-  }
-  
-.effect{
-    writing-mode: vertical-rl;
   }

@@ -70,6 +70,6 @@ function changeSlide() {
 
 var time = document.getElementById('time');
 var date = new Date();
-time.innerHTML = `${date.toDateString()}`; 
+time.innerHTML = `${date.toString()}`; 
 time.style.textAlign = "center";
 var loopSlider = setInterval(changeSlide,3000); 

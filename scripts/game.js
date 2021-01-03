@@ -92,4 +92,4 @@ function startGame() {
     player.update();
   }
 
-  document.getElementById('playButton').addEventListener('click',startGame);
+document.getElementById('playButton').addEventListener('click',startGame);

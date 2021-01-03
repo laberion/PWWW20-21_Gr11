@@ -1,17 +1,9 @@
 @font-face {
     font-family: 'newFont';
-    src: url('webfont.eot'); /* IE9 Compat Modes */
-    src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
-         url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
-         url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+    src: url('Fonts/Bostwy.ttf');
   }
 body {
     margin:0;
-}
-main {
-    font-family: 'newFont' , Arial, Helvetica, sans-serif;
 }
 #disclaimer {
     background-color: rgb(236, 236, 236);
@@ -36,6 +28,7 @@ main {
     border-radius: 3px;
     text-align: center;
     border-collapse: collapse;
+    font-family: 'newFont' , Arial, Helvetica, sans-serif;
 }
 caption {
     font-size: 1.5rem;
@@ -109,4 +102,7 @@ figcaption{
       -webkit-transform: translateX(10px) rotateX(10deg) rotateY(360deg) rotateZ(360deg);
               transform: translateX(10px) rotateX(10deg) rotateY(360deg) rotateZ(360deg);
     }
+  }
+  .stock {
+    writing-mode: vertical-lr;
   }

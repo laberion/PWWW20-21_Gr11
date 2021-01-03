@@ -25,7 +25,7 @@ function register(event) {
         if (!window.localStorage.getItem(email)) {
             if (validatePassword(password)) {
                 if (validateConfirmPassword(password, confirmPassword)) {
-                    if (validatePhone(phoneNumber)) {
+                    if (!isNaN(parseInt(phoneNumber)) && validatePhone(phoneNumber)) {
                         signUp(user);
                         window.alert("You have successfuly registered");
                         var urlParts = window.location.href.split('/');
@@ -33,18 +33,23 @@ function register(event) {
                         window.location.href = url.replace(urlParts[urlParts.length-1],"index.html");
                     } else {
                         window.alert("Please enter a valid phone number");
+                        throw "Please enter a valid phone number";
                     }
                 } else {
                     window.alert("Passwords must match");
+                    throw "Passwords must match";
                 }
             } else {
                 window.alert("Password must start with a capital letter, containt a number and at least 8 characters");
+                throw "Password must start with a capital letter, containt a number and at least 8 characters";
             }
         } else {
             window.alert("This email address is in use.");
+            throw "This email address is in use.";
         }
     } else {
         window.alert("Please enter a valid email address");
+        throw "Please enter a valid email address";
     }
 }
 
@@ -68,7 +73,12 @@ function fieldChecker(){
 }
 
 function signUp(user) {
-    window.localStorage.setItem(user.email, user.password);
+    try {
+        window.localStorage.setItem(user.email, user.password);
+    } catch (error) {
+        alert("User info not defined"); 
+    }
+    
 }
 
 function validateEmail(email) {

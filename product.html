@@ -79,7 +79,7 @@
                 <a id="btn" href="#shop">SHOP NOW</a>
         </div>
         <div id="shop">
-            <table cellspacing="1px" border="1">
+            <table id="tableStock" cellspacing="1px" border="1">
                 <caption><u><b>Products</b></u></caption>
                 <thead>
                     <tr>
@@ -107,9 +107,9 @@
                     <tr>
                         <td><img src="Images/products/Desloratadine.png"></td>
                         <td>Chemists&#39; Own Desloratadine</td>
-                        <td>Tablets provides non drowsy relief for hayfever, hives and year-round allergies.</td>
+                        <td>Tablets provides drowsy relief for hayfever, hives and year-round allergies.</td>
                         <td>&#36;29.99</td>
-                        <td>No</td>
+                        <td>Yes</td>
                     </tr>
                     <tr>
                         <td><img src="Images/products/OptiMel.png"></td>
@@ -145,15 +145,15 @@
                         <td>Chemists Own Cystitis Relief Sachets</td>
                         <td>Relief from painful burning symptoms of cystitis</td>
                         <td>&#36;4.99</td>
-                        <td>Yes</td>
+                        <td>No</td>
                     </tr>
                     <tr>
                         <td><img src="Images/products/clearblue.png"></td>
                         <td>Clearblue Digital Pregnancy Test</td>
-                        <td>Clearblue Digital Pregnancy Test - no test is more accurate - over 99% accurate from the day
+                        <td>Clearblue Digital Pregnancy Test  - over 99% accurate from the day
                             of your expected period</td>
                         <td>&#36;16.49</td>
-                        <td>Yes</td>
+                        <td> <span class="stock">Yes</span></td>
                     </tr>
                 </tbody>
                 <tfoot>
@@ -161,6 +161,30 @@
                                 Illegal</mark></i> </th>
                 </tfoot>
             </table>
+            <button id="checkStock" style="margin:30px;">Check Stock</button>
+            <button id="checkStock2" style="margin:30px;">Need stocking</button>
+            <script>
+                document.getElementById('checkStock').addEventListener('click' , ()=>{
+                    var reg = new RegExp('yes*', 'i');
+                    var shop = document.getElementById('shop').innerHTML ;
+                    var res = reg.exec(shop);
+                    if(res.length != 0) {
+                        alert("Stock is not empty");
+                    }
+                    console.log(res);
+                });
+                
+            </script>
+            <script>
+                document.getElementById('checkStock2').addEventListener('click' , ()=>{
+                    var shop = document.getElementById('tableStock').innerHTML ;
+                    if(shop.match(/No/g).length != 0) {
+                        alert("Some items need stocking");
+                    }
+                    console.log(shop.match(/No/g));
+                });
+                
+            </script>
         </div>
         <div id="disclaimer">
             <h3>Dangers of Taking Medication Without a Prescription</h3>
