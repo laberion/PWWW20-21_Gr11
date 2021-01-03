@@ -49,3 +49,9 @@ button {
 address {
     margin-left: 30px;
 }
+#story img {
+    margin: 30px;
+    width: 200px;
+    height: 200px;
+    float: right;
+}

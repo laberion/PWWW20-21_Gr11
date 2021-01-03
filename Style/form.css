@@ -31,3 +31,13 @@ main{
     height: 20px;
     opacity: 0.3;
 }
+#tutorial {
+    position: absolute;
+    top: 324px;
+    left: 830px;
+}
+#tutorial1 {
+    position: absolute;
+    top: 460px;
+    left: 725px;
+}

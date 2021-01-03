@@ -89,7 +89,7 @@ function validatePassword(password) {
 }
 
 function validateConfirmPassword(password1, password2) {
-    if (validatePassword(password1) && validatePassword(password2) && password1.length === password2.length) {
+    if (validatePassword(password1) && validatePassword(password2) && password1.localeCompare(password2) === 0) {
         return true;
     }
     return false;

@@ -3,15 +3,23 @@ body {
 }
 #disclaimer {
     background-color: rgb(236, 236, 236);
-    height: 130px;
+    height: auto;
     text-align: center;
     padding: 5% 50px;
     font-size: 1.1rem;
 }
-#diclaimer p{
+#disclaimer img {
+    width: 50px;
+    height: 50px;
+    float:left;
+}
+#disclaimer p{
     margin-bottom: 30px;
 }
-table {
+#disclaimer ol {
+    text-align: left;
+}
+#shop table {
     margin: 50px 30px;
     border-radius: 3px;
     text-align: center;
@@ -22,14 +30,14 @@ caption {
     text-transform: uppercase;
     margin-bottom: 15px;
 }
-tbody tr td img{
+#shop tbody tr td img{
     width: 70px;
     height: 50px;
 }
-tbody tr td img:hover{
-    transform: scale(2) translateX(20px);
+#shop tbody tr td img:hover{
+    transform: scale(2) translateX(20px) rotate(-90deg);
 }
-.btn {
+#btn {
     height: 20px;
     color:  #81b300;
     box-shadow: 1px 1px 4px 1px rgba(0,0,0,.15);
@@ -42,8 +50,46 @@ tbody tr td img:hover{
     display: block;
     margin-bottom: 30px;
 }
-.btn:hover{
+#btn:hover{
     color:white;
     transition: background-color 0.8s ease;
     background-color:  #81b300;
 }
+#partners table {
+    margin: 30px
+}
+#partners table tr td {
+    padding-right: 280px;
+    transform: skew(10deg, 0);
+}
+#partners table img{
+    width: 70px;
+    height: 50px;
+}
+
+#partners table img{
+    -webkit-animation: transformimi3d 4s infinite linear;
+            animation: transformimi3d 4s infinite linear;
+  }
+  
+  @-webkit-keyframes transformimi3d {
+    from {
+      -webkit-transform: translateX(50px) rotateX(0deg) rotateY(0deg) rotateZ(0);
+              transform: translateX(50px) rotateX(0deg) rotateY(0deg) rotateZ(0);
+    }
+    to {
+      -webkit-transform: translateX(50px) rotateX(10deg) rotateY(360deg) rotateZ(360deg);
+              transform: translateX(50px) rotateX(10deg) rotateY(360deg) rotateZ(360deg);
+    }
+  }
+  
+  @keyframes transformimi3d {
+    from {
+      -webkit-transform: translateX(50px) rotateX(0deg) rotateY(0deg) rotateZ(0);
+              transform: translateX(50px) rotateX(0deg) rotateY(0deg) rotateZ(0);
+    }
+    to {
+      -webkit-transform: translateX(50px) rotateX(10deg) rotateY(360deg) rotateZ(360deg);
+              transform: translateX(50px) rotateX(10deg) rotateY(360deg) rotateZ(360deg);
+    }
+  }
