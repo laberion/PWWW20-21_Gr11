@@ -33,6 +33,7 @@ main {
 }
 #info h1 {
     outline: black;
+    outline-offset: 5px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 2.5rem;
     margin-top:10px;
@@ -59,6 +60,7 @@ main {
     background-clip: border-box;
     position:absolute;
     overflow: auto;
+    resize: none;
 }
 #lSide p {
     padding: 20px 50px 10px 30px;
@@ -88,6 +90,7 @@ span{
     width: 50%;
     height:360px;
     background-image: url("../Images/fitness/healthyFood.png");
+    background-origin: content-box;
     background-clip: border-box;
     background-repeat: no-repeat;
     background-size: cover;
@@ -108,4 +111,24 @@ table{
     text-align: center;
     background: radial-gradient(ellipse at top, #d5f1b5, transparent),
                 radial-gradient(ellipse at bottom, #4d9f0c, transparent);
+}
+@-webkit-keyframes changeBg
+{
+   0%   {background-color: #ffff;}
+   25%  {background-color: rgb(228, 217, 217);}
+   50%  {background-color: rgb(175, 154, 154);}
+   100% {background-color: rgb(146, 135, 135);}
+}
+
+@keyframes changeBg
+{
+    0%   {background-color: #ffff;}
+    25%  {background-color: rgb(228, 217, 217);}
+    50%  {background-color: rgb(175, 154, 154);}
+    100% {background-color: rgb(146, 135, 135);}
+}
+body
+{
+    animation: changeBg 5s infinite;
+   -webkit-animation: changeBg 5s infinite;
 }

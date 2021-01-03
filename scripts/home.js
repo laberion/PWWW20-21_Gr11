@@ -68,4 +68,8 @@ function changeSlide() {
     else{index ++;}
 }
 
+var time = document.getElementById('time');
+var date = new Date();
+time.innerHTML = `${date.toDateString()}`; 
+time.style.textAlign = "center";
 var loopSlider = setInterval(changeSlide,3000); 

@@ -254,6 +254,17 @@ footer {
 .newsletter input:focus{
   border: 1px solid #1f1f1f;
 }
+.newsletter textarea {
+  font-size: 13px;
+  line-height: 21px;
+  color: #999999; 
+  padding-left: 10px;
+  width: 210px;
+  border: 0;
+  border-radius: 7px;
+  margin-top: 10px;
+  background-color: #1f1f1f;
+}
 
 /*-----Drop Down menu */
 .dropdown{
